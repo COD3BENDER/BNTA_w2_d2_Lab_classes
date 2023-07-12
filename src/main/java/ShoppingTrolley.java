@@ -10,11 +10,9 @@ public class ShoppingTrolley {
     public void addItem(String item){
         items.add(item);
     }
-
     public int countItemsInTrolley(){
         return items.size();
     }
-
     public boolean checkIfIteminTrolley(String item){
         if(items.contains(item)){
             return true;

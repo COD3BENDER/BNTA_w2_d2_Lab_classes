@@ -5,7 +5,6 @@ public class Computer {
     public Computer(int storage){
         this.storage = storage;
 
-
     }
 
     public int getStorage() {
@@ -24,6 +23,8 @@ public class Computer {
     }
 
     public void printMessage(String message){
-        System.out.println(message);
+        if (!this.printer.equals("")){
+            System.out.println(message);
+        }
     }
 }

@@ -35,19 +35,21 @@ public class Runner {
 
         // 3. Add more storage to the computer
         computer.addStorage(100);
+
         // We use the getter again to check that the amount of storage has been updated
         int newStorage = computer.getStorage();
         System.out.println("Computer now has " + newStorage + "GB storage");
 
         // 4. Use a setter to update the computer's printer property
-        computer.setPrinter("HP Printer");
+        computer.setPrinter("HP");
         // Write a getter and use it below to check that the setter worked
         String currentPrinter = computer.getPrinter();
         System.out.println("Computer currently has a " + currentPrinter + " printer connected.");
 
         // 5. Write a method to print a message.
         // To test this works *without* a printer too you can comment out the code for question 4
-        computer.printMessage("Hello World!");
+        computer.printMessage("Printer Connected!");
+
     }
 
     public static void shoppingTrolleyDemo(){
@@ -56,7 +58,6 @@ public class Runner {
 
         // 1. Create a new shopping trolley
         ShoppingTrolley trolley = new ShoppingTrolley();
-
 
         // 2. Add an item to the trolley
         trolley.addItem("Apple");
